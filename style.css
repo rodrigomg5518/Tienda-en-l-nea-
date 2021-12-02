@@ -1,0 +1,225 @@
+   /*CODIGO SOLO PARA LA BARRA DE MENU*/
+   
+   * {
+       margin: 0;
+       padding: 0;
+       font: 12pt cursive;
+   }
+   
+   nav a {
+       text-decoration: blink;
+       color: inherit;
+       font-size: 14px 2px;
+       margin: auto;
+   }
+   
+   nav li {
+       display: inline-table;
+       width: 130px;
+       height: 15px;
+       padding: 8px 20px;
+       background-color: transparent;
+       border: 1px solid transparent;
+       text-align: center;
+       color: rgb(0, 0, 0);
+       position: center;
+   }
+   
+   nav li:hover {
+       background-color: rgb(218, 132, 185);
+       color: rgb(243, 233, 233);
+   }
+   
+   nav li>ul {
+       display: none;
+   }
+   
+   nav li:hover>ul {
+       display: block;
+       position: bottom;
+       left: 0px;
+   }
+   /*Estilo de Barra de Busqueda*/
+   
+   * {
+       margin: 0;
+       padding: 0%;
+       position: relative;
+   }
+   
+   nav {
+       font-family: 'PT Sans', sans-serif;
+       display: center;
+       align-items: flex-end;
+       justify-content: flex-start;
+       height: 13vh;
+       padding: 0.5% 10%;
+       position: inline;
+   }
+   
+   .buscar {
+       position: absolute;
+       padding: 10px;
+   }
+   
+   .buscar input {
+       width: 800px;
+       height: 37px;
+       padding: 0 20px;
+       font-size: 18px;
+       color: rgb(0, 0, 0);
+       outline: thick double #dde4e7;
+       border: 1px solid rgb(3, 3, 3);
+       border-radius: 30px;
+   }
+   
+   .btn {
+       position: absolute;
+       top: 0;
+       right: 0;
+       background-color: #111010;
+       width: 50px;
+       height: 50px;
+       line-height: 50px;
+       text-align: center;
+       color: white;
+       border-radius: 50px;
+       cursor: pointer;
+   }
+   /*CODIGO SOLO PARA EL SISTEMA DE CARUSEL*/
+   
+   body {
+       min-height: 50vh;
+       background-image: linear-gradient(-45deg, #50b1d5 50%, #dd6946 50%);
+       font-family: 'Raleway', sans-serif;
+   }
+   
+   .titulo {
+       font-size: 50px;
+       font-family: 'Dansing Script', cursive;
+       margin-bottom: 40px;
+       color: rgb(255, 250, 250);
+   }
+   
+   .subtitulo {
+       margin: 0;
+       color: rgb(0, 0, 0);
+       font-family: 'Dansing Script', cursive;
+       display: inline;
+       font-size: 50px;
+       font-weight: 500;
+       text-transform: uppercase;
+   }
+   
+   .sabor {
+       color: rgb(255, 255, 255);
+       margin: 7px 0;
+       font-size: 50px;
+       font-weight: 600;
+       text-shadow: 2px 2px 1px rgba(0, 0, 0, 0, 7);
+       font-family: 'Dancing Script', cursive;
+       margin-top: 0;
+   }
+   
+   .linea-division {
+       width: 75%;
+       height: 2px;
+       background-color: #000000;
+   }
+   /*---------------------------*/
+   /*Estilos de materielize*/
+   /*----------------------------*/
+   /*Estilos para el icono del menu*/
+   
+   .carousel {
+       min-height: 400px;
+   }
+   
+   .carousel .carousel-item {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       user-select: none;
+       width: 400px;
+       height: 400px;
+   }
+   
+   .carousel .carousel-item img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       position: absolute;
+       top: 0;
+       left: 0;
+       z-index: -1;
+       border-radius: 15px;
+   }
+   
+   .carousel .indicators .indicator-item {
+       border-radius: 0;
+       transform: rotate(90deg);
+       margin: 0 10px;
+       background: #000000;
+   }
+   /*
+* .icono-menu {
+    margin: 10px 10px;
+    position: absolute;
+    z-index: 10;
+}
+
+.icono-menu img {
+    vertical-align: top;
+    width: 60px;
+    cursor: pointer;
+}*/
+   /*Estilos para el contenedor del menu
+
+.cont-menu {
+    background-color: transparent;
+    box-shadow: 1px 0px 2px 5px transparent;
+    width: 200px;
+    height: 75vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all.5s ease;
+}
+
+
+/*Estilos para agregar a Js
+
+.active {
+    transform: translate(20px 10px);
+}
+
+.opacity {
+    transition: all .5s ease;
+}
+
+
+/*Estilos para el listado del menu 
+
+.cont-menu ul {
+    padding: 100px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu ul li {
+    color: rgb(8, 8, 8);
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+
+.cont-menu ul li:hover {
+    background-color: white;
+    color: rgb(5, 5, 5);
+}
+
+.linea-horizontal {
+    border-left: thick solid #111111;
+}
